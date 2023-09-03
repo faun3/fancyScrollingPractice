@@ -5,18 +5,12 @@ import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
+  const { scrollY } = useScroll();
   return (
     <main>
       <div className="w-full min-h-screen flex justify-center items-center bg-black">
-        <motion.div
-          style={{ top: scrollYProgress }}
-          className={`absolute`}>
-          <Image
-            width={350}
-            height={350}
-            src={anchor}
-            alt=""></Image>
+        <motion.div style={{ top: scrollY.get() + 35 }} className={`absolute`}>
+          <Image width={350} height={350} src={anchor} alt=""></Image>
         </motion.div>
       </div>
       <div className="h-[500px] bg-black"></div>
