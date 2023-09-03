@@ -1,15 +1,7 @@
 "use client";
 
-import {
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
-import { useEffect, useState } from "react";
-import { MotionValue } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 // when the user scrolls down, we need to hide the navbar
 // when the user scrolls up, we need to reveal the nav
