@@ -42,9 +42,9 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`flex justify-between w-[calc(100%-5rem)] md:w-[80%] fixed top-0 left-0 right-0 z-20 text-white bg-blur h-10 items-center backdrop-blur-md ${
-        folded ? "opacity-0" : "h-10"
-      } transition-all mx-auto`}
+      className={`flex justify-between w-[calc(100%-5rem)] md:w-[80%] fixed top-0 left-0 right-0 z-20 text-white bg-blur h-10 items-center backdrop-blur-md origin-top ${
+        folded ? "scale-y-0" : ""
+      } transition-transform mx-auto delay-200`}
     >
       <h1>Wow nav</h1>
       <span>
